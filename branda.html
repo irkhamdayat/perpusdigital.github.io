@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        perpustakaan baru
+    </title>
+    <link rel="stylesheet" href="statis/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav">
+            <ul>
+                <li><a href="artikel.html">Seputar Buku</a></li>
+                <li><a href="perpusdigital.html">Perpustakaan Digital</a></li>
+                <li><a href="branda.html">Beranda</a></li>
+            </ul>
+        </div>
+        <h1>Pinjam Buku</h1>
+    </header>
+    <div id="form">
+        <table align="center">
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" id="isi">
+                        <div>
+                            <label>Nama Lengkap</label>
+                            <br>
+                            <label class="validation-error hide" id="fullNameValidationError">harus diisi</label>
+                            <br>
+                            <input type="text" name="namalengkap" id="namalengkap">
+                        </div>
+                        <div>
+                            <label>Judul Buku</label>
+                            <br>
+                            <input type="text" name="judul" id="judul">
+                        </div>
+                        <div>
+                            <label>Jumlah Buku</label>
+                            <br>
+                            <input type="text" name="jumlah" id="jumlah">
+                        </div>
+                        <div>
+                            <label>Nim</label>
+                            <br>
+                            <input type="text" name="nim" id="nim">
+                        </div>
+                        <div  class="form-action-buttons">
+                            <br>
+                            <input type="submit" value="kirim">
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div id="hasil">
+        <table class="list" id="employeeList" align="center">
+            <thead>
+                <tr>
+                    <th>Nama Lengkap</th>
+                    <th>Judul Buku</th>
+                    <th>Jumlah Buku</th>
+                    <th>nim</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+        <article  id="boxes">
+            <div>
+                <div class="box">
+                  <img src="statis/buku.png">
+                  <h3>BUKU ADALAH ILMU</h3>
+                  <p>merupakan sumber berbagai informasi yang dapat membuka wawasan kita tentang berbagai hal seperti ilmu pengetahuan</p>
+                </div>
+                <div class="box">
+                  <img src="statis/gratis.jpg">
+                  <h3>GRATIS</h3>
+                  <p>ayo keperpustakaan belajar gratis dapatkan ilmu pengetahuan sepuasnya</p>
+                </div>
+                <div class="box">
+                  <img src="statis/perpus.webp">
+                  <h3>TUJUAN</h3>
+                  <p>Bisa mengembangkan kemampuan berfikir kreatif, membina rohani dan bisa memakai kemampuannya supaya dapat menghargai seni dan budaya manusia.</p>
+                </div>
+              </div>
+        </article>    
+    <div  class="bawah">
+     <footer>
+        <p>Copyright &#169; 2020 Kukuh_Biyantama;Alfian_Sabila;Irkham_Hidayat</p>
+    </footer>
+    </div>
+    <script src="statis/scripts.js"></script>
+</body>
+</html>
